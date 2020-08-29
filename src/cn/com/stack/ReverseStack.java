@@ -15,9 +15,8 @@ public class ReverseStack extends StaskSout<Integer> {
      * @return
      */
     private Integer getAndRemoveLastStackItem(Stack<Integer> stack){
-        if (stack.isEmpty()){
-            throw new RuntimeException("stack is empty");
-        }
+        isEmpty(stack);
+
         Integer pop = stack.pop();
         if (stack.isEmpty()){
             return pop;

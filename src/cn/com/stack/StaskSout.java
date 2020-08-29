@@ -9,6 +9,11 @@ public  abstract class StaskSout<T> {
         System.out.println(stack.stream().map(Object::toString).collect(Collectors.joining(",")));
     }
 
+    protected void isEmpty(Stack<T> stack){
+        if (stack.isEmpty()){
+            throw new RuntimeException("stack is empty");
+        }
+    }
 
 
 
