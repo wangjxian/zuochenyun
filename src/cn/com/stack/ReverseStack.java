@@ -6,5 +6,5 @@ package cn.com.stack;
  */
 public class ReverseStack {
 
-    
+
 }
